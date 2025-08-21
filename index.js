@@ -2,29 +2,29 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-console.log(getRandomNumber(5, 10));
 
 function getRandomExponent(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-console.log(getRandomExponent(2,4));
+const randomNumber = getRandomNumber(5, 10);
 
-let Number = function(getRandomNumber);
+const randomExponent = getRandomExponent(2, 4);
 
-console.log(Number);
 
-let Exponent = function(getRandomExponent);
-
-function square(Number){
-    return Number * 2
+function square(randomNumber){
+    return randomNumber * randomNumber
 }
 
-console.log(square(Number));
+console.log(randomNumber);
 
-function NumberInExponent(Number, Exponent) {
-    return 
+console.log(randomExponent);
+
+console.log(square(randomNumber));
+
+function NumberInExponent(randomNumber, randomExponent) {
+    return randomNumber ** randomExponent
 }
 
-console.log(NumberInExponent(Number, Exponent))
+console.log(NumberInExponent(randomNumber, randomExponent))
 
